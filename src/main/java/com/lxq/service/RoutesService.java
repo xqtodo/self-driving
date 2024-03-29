@@ -1,6 +1,6 @@
 package com.lxq.service;
 
-import com.lxq.pojo/entity.Routes;
+import com.lxq.pojo.entity.Routes;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

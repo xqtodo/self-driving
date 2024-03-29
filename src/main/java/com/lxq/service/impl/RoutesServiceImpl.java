@@ -1,7 +1,7 @@
 package com.lxq.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lxq.pojo/entity.Routes;
+import com.lxq.pojo.entity.Routes;
 import com.lxq.service.RoutesService;
 import com.lxq.mapper.RoutesMapper;
 import org.springframework.stereotype.Service;
