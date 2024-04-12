@@ -15,13 +15,19 @@ import lombok.Data;
 public class Routes implements Serializable {
     private Integer id;
 
-    private String routeName;
+    private String name;
+
+    private String location;
 
     private String description;
 
-    private String startLocation;
+    private String detailDesc;
 
-    private String endLocation;
+    private String photoUrl;
+
+    private String detailPhoto;
+
+    private String spotsCity;
 
     private Integer isDeleted;
 

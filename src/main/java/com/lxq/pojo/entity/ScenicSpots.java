@@ -17,11 +17,17 @@ public class ScenicSpots implements Serializable {
 
     private String name;
 
+    private Integer price;
+
+    private Integer oldPrice;
+
     private String location;
 
     private String description;
 
     private String photoUrl;
+
+    private String detailPhoto;;
 
     private Integer isDeleted;
 

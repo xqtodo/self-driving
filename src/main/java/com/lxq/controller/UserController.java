@@ -14,9 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 import static com.lxq.pojo.entity.Users.ROLE_NORMAL;
 
@@ -47,13 +45,20 @@ public class UserController {
         //使用optional判断userDto是否存在
         Users users = Optional.ofNullable(usersService.login(userDto)).orElseThrow(() -> new LoginException(MessageConstant.LOGIN_ERROR));
 //        Users users = usersService.login(userDto);
+
+//        if (Objects.equals(users.getRole(), "普通用户")){
+//            return Result.error(MessageConstant.ACCOUNT_PERMISSION_DENIED);
+//        }
         Map<String,Object> claims = new HashMap<>();
         claims.put(JwtClaimsConstant.EMP_ID,users.getId());
         String token = JwtUtil.createJWT(
                 jwtProperties.getUserSecretKey(),
                 jwtProperties.getUserTtl(),
                 claims);
-        return Result.success(token);
+        List<String> loginInfo = new ArrayList<>();
+        loginInfo.add(users.getUsername());
+        loginInfo.add(token);
+        return Result.success(loginInfo);
     }
 
 }

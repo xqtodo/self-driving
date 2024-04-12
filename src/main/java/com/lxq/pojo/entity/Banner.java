@@ -5,33 +5,17 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
-
-import lombok.Builder;
 import lombok.Data;
 
 /**
- * @TableName vehicles
+ * @TableName banner
  */
-@TableName(value ="vehicles")
+@TableName(value ="banner")
 @Data
-public class Vehicles implements Serializable {
+public class Banner implements Serializable {
     private Integer id;
 
-    private String vehicleBrand;
-
-    private String vehicleModel;
-
-    private Integer price;
-
-    private Integer oldPrice;
-
-    private String photoUrl;
-
-    private String detailPhoto;
-
-    private String description;
-
-    private Integer isDeleted;
+    private String imgurl;
 
     private static final long serialVersionUID = 1L;
 }

@@ -6,3 +6,8 @@ lxq:
     database: self_driving
     username: root
     password: 123456
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tAKkc6Wm9M6pSxUyHWA
+    access-key-secret: zZwlpM62pkR17gCQgIs1987mn3Enox
+    bucket-name: self-driving
