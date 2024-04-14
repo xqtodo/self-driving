@@ -3,6 +3,8 @@ package com.lxq.mapper;
 import com.lxq.pojo.entity.Vehicles;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Service;
 
 /**
 * @author lxq
@@ -13,6 +15,8 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface VehiclesMapper extends BaseMapper<Vehicles> {
 
+    @Select("select price from vehicles where id=#{eleId}")
+    Integer getPrice(Integer eleId);
 }
 
 

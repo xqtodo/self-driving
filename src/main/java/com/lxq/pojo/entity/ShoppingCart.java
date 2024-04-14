@@ -5,33 +5,26 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
+
+import lombok.Builder;
 import lombok.Data;
 
 /**
- * @TableName orders
+ * @TableName shopping_cart
  */
-@TableName(value ="orders")
+@TableName(value ="shopping_cart")
 @Data
-public class Orders implements Serializable {
+@Builder
+public class ShoppingCart implements Serializable {
     private Integer id;
 
     private Integer userId;
 
-    private String userName;
-
-    private Integer userPhone;
-
-    private String elePhoto;
-
-    private String eleName;
-
-    private Integer elePrice;
+    private Integer eleId;
 
     private Integer eleCount;
 
-    private Integer eleTotalprice;
-
-    private Integer isDeleted;
+    private String elePhoto;
 
     private static final long serialVersionUID = 1L;
 }

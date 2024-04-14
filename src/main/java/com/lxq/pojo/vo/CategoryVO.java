@@ -1,7 +1,6 @@
-package com.lxq.pojo.dto;
+package com.lxq.pojo.vo;
 
 import com.lxq.pojo.entity.Goods;
-import com.lxq.pojo.entity.SecondaryClassification;
 import lombok.Data;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.List;
  * @Date: 2024/4/9 23:58
  */
 @Data
-public class CategoryDto {
+public class CategoryVO {
 
     private Integer id;
 
@@ -19,7 +18,7 @@ public class CategoryDto {
 
     private String picture;
 
-    private List<CategoryDto> children;
+    private List<CategoryVO> children;
 
     private List<Goods> goods;
 }

@@ -1,4 +1,4 @@
-package com.lxq.pojo.dto;
+package com.lxq.pojo.vo;
 
 import lombok.Data;
 
@@ -7,7 +7,7 @@ import lombok.Data;
  * @Date: 2024/4/10 下午9:37
  */
 @Data
-public class RouteDto {
+public class RouteVO {
 
     private Integer id;
 

@@ -1,4 +1,4 @@
-package com.lxq.pojo.dto;
+package com.lxq.pojo.vo;
 
 import lombok.Data;
 
@@ -7,7 +7,7 @@ import lombok.Data;
  * @Date: 2024/4/10 下午8:55
  */
 @Data
-public class ScenicSpotsDto {
+public class ScenicSpotsVO {
     private Integer id;
 
     private String name;

@@ -1,4 +1,4 @@
-package com.lxq.pojo.dto;
+package com.lxq.pojo.vo;
 
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class DetailPageDto {
+public class DetailPageVO {
     private Integer id;
 
     private String name;

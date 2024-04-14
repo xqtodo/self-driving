@@ -29,8 +29,8 @@ public class ScenicSpotsController {
 
 
     private final ScenicSpotsService scenicSpotsService;
-    @Autowired(required = false)
-    private AliOssUtil aliOssUtil;
+//    @Autowired(required = false)
+    private final AliOssUtil aliOssUtil;
 
 
     //TODO: 图片上传,阿里云OSS，返回图片地址，还未测试

@@ -10,4 +10,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface VehiclesService extends IService<Vehicles> {
 
+    Integer getPrice(Integer eleId);
 }

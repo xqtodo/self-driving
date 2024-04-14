@@ -1,4 +1,4 @@
-package com.lxq.pojo.dto;
+package com.lxq.pojo.vo;
 
 
 import lombok.Data;
@@ -8,7 +8,7 @@ import lombok.Data;
  * @Date: 2024/3/28 19:57
  */
 @Data
-public class UserDto {
+public class UserVO {
 
     private String username;
 

@@ -1,6 +1,6 @@
 package com.lxq.service;
 
-import com.lxq.pojo.dto.CategoryDto;
+import com.lxq.pojo.vo.CategoryVO;
 import com.lxq.pojo.entity.PrimaryClassification;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -14,5 +14,5 @@ import java.util.List;
 public interface PrimaryClassificationService extends IService<PrimaryClassification> {
 
 
-    List<CategoryDto> findCategoryAndGoods();
+    List<CategoryVO> findCategoryAndGoods();
 }

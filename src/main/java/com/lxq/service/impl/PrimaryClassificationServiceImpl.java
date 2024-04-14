@@ -1,7 +1,7 @@
 package com.lxq.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lxq.pojo.dto.CategoryDto;
+import com.lxq.pojo.vo.CategoryVO;
 import com.lxq.pojo.entity.PrimaryClassification;
 import com.lxq.service.PrimaryClassificationService;
 import com.lxq.mapper.PrimaryClassificationMapper;
@@ -20,7 +20,7 @@ import java.util.List;
 public class PrimaryClassificationServiceImpl extends ServiceImpl<PrimaryClassificationMapper, PrimaryClassification>
     implements PrimaryClassificationService{
     @Override
-    public List<CategoryDto> findCategoryAndGoods() {
+    public List<CategoryVO> findCategoryAndGoods() {
 
         return null;
     }

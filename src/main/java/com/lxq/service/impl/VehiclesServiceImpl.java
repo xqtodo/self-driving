@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lxq.pojo.entity.Vehicles;
 import com.lxq.service.VehiclesService;
 import com.lxq.mapper.VehiclesMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +16,14 @@ import org.springframework.stereotype.Service;
 public class VehiclesServiceImpl extends ServiceImpl<VehiclesMapper, Vehicles>
     implements VehiclesService{
 
+    @Autowired
+    private VehiclesMapper vehiclesMapper;
+
+    @Override
+    public Integer getPrice(Integer eleId) {
+        Integer price = vehiclesMapper.getPrice(eleId);
+        return price;
+    }
 }
 
 

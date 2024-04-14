@@ -1,6 +1,6 @@
 package com.lxq.service;
 
-import com.lxq.pojo.dto.UserDto;
+import com.lxq.pojo.vo.UserVO;
 import com.lxq.pojo.entity.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -11,5 +11,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface UsersService extends IService<Users> {
 
-    Users login(UserDto userDto);
+    Users login(UserVO userVO);
 }
