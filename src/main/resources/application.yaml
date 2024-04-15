@@ -9,6 +9,10 @@ spring:
     url: jdbc:mysql://${lxq.datasource.host}:${lxq.datasource.port}/${lxq.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     driver-class-name: ${lxq.datasource.driver-class-name}
     type: com.alibaba.druid.pool.DruidDataSource
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 logging:
   level:
     com.lxq: debug
