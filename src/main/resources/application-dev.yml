@@ -1,13 +1,13 @@
 lxq:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    host: localhost
+    host: 123.249.101.149
     port: 3306
     database: self_driving
     username: root
     password: 123456
   alioss:
-    endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tAKkc6Wm9M6pSxUyHWA
-    access-key-secret: zZwlpM62pkR17gCQgIs1987mn3Enox
+    endpoint: oss-cn-shanghai.aliyuncs.com
+    access-key-id: LTAI5t6DgxwKLpM9Em7Uyr5H
+    access-key-secret: 1hQljSfJdvvrjNFTObeFYMJRdiXhs7
     bucket-name: self-driving
